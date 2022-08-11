@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="zaloguj" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="po.FXMLDocumentController_zaloguj">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button alignment="CENTER" layoutX="1054.0" layoutY="14.0" mnemonicParsing="false" onAction="#open_zaloguj" prefHeight="39.0" prefWidth="178.0" style="-fx-background-color: #df2176; -fx-text-fill: white; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: 700;" stylesheets="@style.css" text="Zaloguj się" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="25.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Pane layoutX="-3.0" layoutY="98.0" prefHeight="642.0" prefWidth="1280.0">
+         <children>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="651.0" prefWidth="1288.0" style="-fx-background-color: #f2f2f2;">
+               <children>
+                  <TextField fx:id="login" alignment="CENTER" layoutX="381.0" layoutY="194.0" prefHeight="39.0" prefWidth="542.0" style="-fx-effect: dropshadow(three-pass-box, white, 20, 0, 0, 0);" styleClass="inpu" stylesheets="@style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="password" alignment="CENTER" layoutX="381.0" layoutY="306.0" prefHeight="39.0" prefWidth="542.0" style="-fx-effect: dropshadow(three-pass-box, white, 20, 0, 0, 0);;" styleClass="inpu" stylesheets="@style.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="383.0" layoutY="423.0" mnemonicParsing="false" onAction="#log_me" prefHeight="50.0" prefWidth="542.0" style="-fx-background-color: #df2176; -fx-text-fill: white; -fx-font-family: 'Work Sans', sans-serif; -fx-font-weight: 700;" stylesheets="@style.css" text="Zaloguj się">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane layoutX="-8.0" layoutY="534.0" prefHeight="117.0" prefWidth="1296.0" style="-fx-background-color: black;">
+                     <children>
+                        <Label layoutX="532.0" layoutY="14.0" prefHeight="64.0" prefWidth="316.0" style="-fx-font-weight: 700;" text="Developed by: Damian Jamroży" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="367.0" layoutY="52.0" text="LOGOWANIE DO ADMIN PANELU">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="381.0" layoutY="162.0" prefHeight="32.0" prefWidth="542.0" text="LOGIN">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="383.0" layoutY="273.0" prefHeight="32.0" prefWidth="542.0" text="HASŁO">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </children>
+      </Pane>
+      <GridPane alignment="CENTER" layoutX="581.0" layoutY="14.0" prefHeight="76.0" prefWidth="467.0" style="-fx-alignment: center;">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="o_mnie" fitHeight="50.0" fitWidth="200.0" onMouseClicked="#open_o_mnie" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/icon/me.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@img/icon/home.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@img/icon/price.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@img/icon/bucket.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Hyperlink onAction="#open_o_mnie" style="-fx-font-weight: 700; -fx-text-fill: black;" stylesheets="@style.css" text="O MNIE" GridPane.rowIndex="1" />
+            <Hyperlink onAction="#open_home" style="-fx-font-weight: 700; -fx-text-fill: black;" stylesheets="@style.css" text="HOME" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Hyperlink onAction="#open_uslugi" style="-fx-font-weight: 700; -fx-text-fill: black;" stylesheets="@style.css" text="USŁUGI" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Hyperlink onAction="#open_koszyk" style="-fx-font-weight: 700; -fx-text-fill: black;" stylesheets="@style.css" text="KOSZYK" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="16.0" layoutY="2.0" prefHeight="64.0" prefWidth="309.0" style="-fx-font-weight: 700;" text="Damian Jamroży">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="7.0" layoutY="45.0" prefHeight="39.0" prefWidth="330.0" style="-fx-font-weight: 700;" text="Sample Java Application by Damian Jamroży" textAlignment="CENTER" textFill="#000000a6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

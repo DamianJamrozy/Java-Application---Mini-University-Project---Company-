@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="zaloguj" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="po.FXMLDocumentController_admin">
+    <children>
+      <Label layoutX="474.0" layoutY="25.0" text="ADMIN PANEL">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Pane layoutX="121.0" layoutY="413.0" prefHeight="269.0" prefWidth="286.0" style="-fx-background-color: WHITE;">
+         <children>
+            <ComboBox fx:id="id_zam_edit" layoutX="68.0" layoutY="82.0" prefWidth="150.0" promptText="id zamówienia" />
+            <ComboBox fx:id="status" layoutX="68.0" layoutY="150.0" prefWidth="150.0" promptText="status" />
+            <Label layoutX="24.0" layoutY="34.0" text="ZMIEŃ STATUS ZAMÓWIENIA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="24.0" layoutY="210.0" mnemonicParsing="false" onAction="#change" prefHeight="25.0" prefWidth="238.0" text="Zmień status" />
+         </children>
+      </Pane>
+      <Pane layoutX="878.0" layoutY="413.0" prefHeight="269.0" prefWidth="286.0" style="-fx-background-color: WHITE;">
+         <children>
+            <ComboBox fx:id="id_zam_delete" layoutX="68.0" layoutY="122.0" prefWidth="150.0" promptText="id zamówienia" />
+            <Label layoutX="53.0" layoutY="34.0" text="ANULUJ ZAMÓWIENIE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="24.0" layoutY="210.0" mnemonicParsing="false" onAction="#del" prefHeight="25.0" prefWidth="238.0" text="Anuluj zamówienie" />
+         </children>
+      </Pane>
+      <Pane layoutX="131.0" layoutY="105.0" prefHeight="303.0" prefWidth="1043.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Label layoutX="419.0" layoutY="14.0" text="DOSTĘPNE ZAMÓWIENIA">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="14.0" layoutY="52.0" prefHeight="237.0" prefWidth="1012.0">
+               <columns>
+                  <TableColumn fx:id="idZam1" prefWidth="87.5" text="id_zam" />
+                  <TableColumn fx:id="grap1" prefWidth="55.5" text="graphic" />
+                  <TableColumn fx:id="web1" prefWidth="55.5" text="web_site" />
+                  <TableColumn fx:id="app1" prefWidth="59.0" text="app_mob" />
+                  <TableColumn fx:id="cena1" prefWidth="95.5" text="szacowana_cena" />
+                  <TableColumn fx:id="imie1" prefWidth="145.0" text="Imię_klienta" />
+                  <TableColumn fx:id="nazwisko1" prefWidth="123.5" text="Nazwisko_Klienta" />
+                  <TableColumn fx:id="tel1" prefWidth="104.5" text="Tel_Klienta" />
+                  <TableColumn fx:id="email1" prefWidth="131.0" text="E-mail_Klienta" />
+                  <TableColumn fx:id="statustab1" prefWidth="157.0" text="Status_zamówienia" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

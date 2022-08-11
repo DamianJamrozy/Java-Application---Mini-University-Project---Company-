@@ -1,0 +1,47 @@
+.btn{
+	-fx-background-color: #df2176;
+	-fx-text-fill: white;
+	-fx-font-family: 'Work Sans', sans-serif;
+	-fx-font-weight: 700;
+}
+
+.btn:hover{
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-font-family: 'Work Sans', sans-serif;
+	-fx-font-weight: 700;
+}
+	
+.menu{
+	
+}
+
+.menu:hover{
+	-fx-text-fill: #df2176;
+}
+
+
+.link{
+	-fx-text-fill: black;
+	
+}
+
+.link:hover{
+	-fx-text-fill: #df2176;
+}
+
+.img{
+
+	-fx-effect: dropshadow(three-pass-box, #df2176, 20, 0, 0, 0);
+	-fx-background-radius: 20, 20, 20, 20;
+}
+
+.inpu{
+	-fx-width:50%;
+	-fx-height:3%;
+	-fx-effect: dropshadow(three-pass-box, #b1b1b1, 20, 0, 0, 0);
+	-fx-border-color:white;
+	-fx-text-align:center;
+	-fx-text-fill: #df2176;
+	-fx-font-weight:700;
+}
